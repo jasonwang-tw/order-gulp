@@ -1,0 +1,90 @@
+$main: #070150;
+$sup: #f39519;
+$notice: #f56c6c;
+$border: #57c4e5;
+$light-blue: #f3f8ff;
+$line: #d9e9fe;
+$line-blue: #afc8e9;
+$text-sup: #336699;
+$white: white;
+$shadow: 0 0 20px rgba(0, 16, 165, 0.2);
+$cardShadow: 0 0 20px rgba(0, 16, 165, 0.1);
+$orderActive: #fff0d8;
+
+@mixin bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  color: $main;
+  overflow-x: hidden;
+  // font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $main;
+}
+
+:focus {
+  outline: none;
+}
+
+.text-main {
+  color: $main !important;
+}
+.text-sup {
+  color: $sup;
+}
+.text-border {
+  color: $border;
+}
+.text-sup-blue {
+  color: $text-sup;
+}
+.text-line-blue {
+  color: $line-blue;
+}
+.text-notice {
+  color: $notice;
+}
+.text-white {
+  color: $white;
+}
+.border-line-blue {
+  border-color: $line-blue;
+}
+.bg-main {
+  background-color: $main;
+}
+.home-bg {
+  @include bg-cover();
+  background-image: url(../images/index.jpg);
+}
+.scan-bg {
+  @include bg-cover();
+  background-image: url(../images/scan.jpg);
+}
+.order-bg {
+  @include bg-cover();
+  background-image: url(../images/order.jpg);
+}
+.succe-bg {
+  @include bg-cover();
+  background-image: url(../images/succe.jpg);
+}
