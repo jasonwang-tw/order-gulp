@@ -1,9 +1,19 @@
----
-title: Order
-layout: ./app/template/index.ejs
-engine: ejs
----
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Order
+    </title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
+  <body>
+    
 <main class="order-bg h-full flex justify-center items-center">
   <div class="bg-white h-96 w-1/2 transform translate-x-44 rounded-2xl p-5 shadow-2xl">
     <h1 class="text-4xl -mt-10 mb-5 text-center">確認訂單</h1>
@@ -54,3 +64,15 @@ engine: ejs
     </div>
   </div>
 </main>
+      <footer>
+        <script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/all.js"></script>
+<script>
+    $('.detailBtn').click(function () {
+        $(this).parent().next('.drinkDetail').toggle(200)
+    })
+</script>
+      </footer>
+  </body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Order
+    </title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+  <body>
+    
+<main class="home-bg h-full flex justify-center items-center">
+  <a href="scan.html" class="inline-block transform translate-x-44 ml-14 translate-y-20 text-white text-4xl">開始點餐</a>
+</main>
+      <footer>
+        <script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/all.js"></script>
+<script>
+    $('.detailBtn').click(function () {
+        $(this).parent().next('.drinkDetail').toggle(200)
+    })
+</script>
+      </footer>
+  </body>
+
+</html>
